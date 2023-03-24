@@ -14,7 +14,37 @@ What is linting and formatting: eslint check coding style and enforce style (wit
 ---
 
 ## Git flow rules
-- 
+- You must not push code directly to the `main` branch
+
+##### git commit convention
+There are scenarios: 
+- feature: commit related to a new feature being implemented
+- bugfix: commit related to bug fix
+- config: commit related to config tasks (install new packages, setup environment)
+Examples of commit messaged
+```
+feature: upgrade Navbar component
+fix: fix bug related to Navbar
+config: add script to run unit test
+```
+
+##### Branch name convention
+There are scenarios: 
+- feature: branch related to a new feature being implemented
+- bugfix: branch related to bug fix task
+- config: branch related to config tasks (install new packages, setup environment)
+Examples of commit messaged: must not contain spaces
+```
+feature/upgrade-Navbar-component
+fix/bugp-related-Navbar
+config/add-script-to-run-unit-test
+```
+
+1. Create a new branch from the `main` branch (check **Branch naming convention**)
+2. Do your work and commit the code frequently (check **git commit convention**) -> push the branch to github
+3. When you are done for a task -> create a PR from the branch you are working on to `main` branch
+4. Wait for comments and approval
+5. Merge the branch to `main` and discard the old branch
 
 ## Run the project
 In the project directory, you can run:
