@@ -69,3 +69,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+---
+# Technical details
+
+## UI framework
+- This project uses [MUI](https://mui.com/material-ui/getting-started/installation/)
+- Default font is `Roboto`, which is already included in the packages
+- MUI also uses [Emotion](https://emotion.sh/docs/introduction), which should be used for additional styling
