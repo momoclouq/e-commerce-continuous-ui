@@ -36,7 +36,7 @@ There are scenarios:
 Examples of commit messaged: must not contain spaces
 ```
 feature/upgrade-Navbar-component
-fix/bugp-related-Navbar
+fix/bug-related-Navbar
 config/add-script-to-run-unit-test
 ```
 
@@ -65,10 +65,6 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
 ---
 # Technical details
@@ -77,3 +73,4 @@ Your app is ready to be deployed!
 - This project uses [MUI](https://mui.com/material-ui/getting-started/installation/)
 - Default font is `Roboto`, which is already included in the packages
 - MUI also uses [Emotion](https://emotion.sh/docs/introduction), which should be used for additional styling
+- Typescript (javascript with types) is also used [intro](https://www.typescriptlang.org/)

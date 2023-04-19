@@ -7,8 +7,9 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import HomePage from './pages/homepage/HomePage';
 import { CssBaseline } from '@mui/material';
+import { RouterProvider } from 'react-router-dom';
+import router from './router.config';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       {/* this serves a css global reset */}
       <CssBaseline />
 
-      <HomePage />
+      <RouterProvider router={router} />
     </React.Fragment>
   );
 }
