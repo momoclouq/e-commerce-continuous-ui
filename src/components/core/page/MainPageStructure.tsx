@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 
 const MainPageStructure = () => {
   return (
-    <Container>
+    <Container maxWidth={false} disableGutters={true}>
       <Navbar />
 
       <Outlet />

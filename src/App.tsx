@@ -7,9 +7,11 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import { CssBaseline } from '@mui/material';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import { RouterProvider } from 'react-router-dom';
 import router from './router.config';
+import defaultTheme from './muiTheme/mui.theme';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
@@ -17,7 +19,11 @@ function App() {
       {/* this serves a css global reset */}
       <CssBaseline />
 
-      <RouterProvider router={router} />
+      <ThemeProvider theme={defaultTheme}>
+        <ParallaxProvider>
+          <RouterProvider router={router} />
+        </ParallaxProvider>
+      </ThemeProvider>
     </React.Fragment>
   );
 }

@@ -1,17 +1,15 @@
-import { Link } from 'react-router-dom';
+import { AppBar } from '@mui/material';
+import MediaNavbar from './MediaNavbar';
+import CoreNavbar from './CoreNavbar';
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to={'/'}>Home page</Link>
-        </li>
-        <li>
-          <Link to={'about-us'}>About us</Link>
-        </li>
-      </ul>
-    </nav>
+    <AppBar position='static' sx={{
+      background: '#ee4d2d'
+    }}>
+      <MediaNavbar />
+      <CoreNavbar />
+    </AppBar>
   );
 }
 
