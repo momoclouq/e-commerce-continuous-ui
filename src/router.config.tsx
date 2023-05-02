@@ -3,8 +3,10 @@ import HomePage from './pages/homepage/HomePage';
 import AboutUsPage from './pages/aboutUs/AboutUsPage';
 import NotFoundPage from './pages/notFound/NotFoundPage';
 import MainPageStructure from './components/core/page/MainPageStructure';
+import LogInPage from './pages/authentication/LogInPage';
+import SignUpPage from './pages/authentication/SignUpPage';
 
-const router = createBrowserRouter([
+const router = typeof window !== 'undefined' ? createBrowserRouter([
   {
     path: '/',
     element: <MainPageStructure />,
@@ -18,10 +20,23 @@ const router = createBrowserRouter([
         element: <AboutUsPage />
       },
       {
+        path: 'login',
+        element: <LogInPage />
+      },
+      {
+        path: 'signup',
+        element: <SignUpPage />
+      },
+      {
         path: '*',
         element: <NotFoundPage />
       }
     ]
+  }
+]) : createBrowserRouter([
+  {
+    path: '*',
+    element: 'the app is not supported on server side'
   }
 ]);
 
